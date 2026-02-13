@@ -9,9 +9,14 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk/svg-only@v3
+      - uses: Platane/snk@v3
         with:
           github_user_name: erickcezzar
+          snake_color: 32CD32
+          background_color: 0D1117
+          cell_size: 20
+          shape_color: 20
+          grain: true
           outputs: |
             dist/github-contribution-grid-snake.svg
       - uses: crazy-max/ghaction-github-pages@v4
